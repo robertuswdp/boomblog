@@ -1,17 +1,15 @@
-Post::create([ 'title' => 'Post 1', 'excerpt' => 'This is the first post',
-'body' => '
-<p>This is the first post</p>
-<p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in
-    aliquid facere. Ullam dolor voluptatem, eos molestiae, sapiente eveniet
-    quisquam laborum aut quidem minus ipsum officiis ea deleniti cupiditate
-    alias vel possimus ad neque officia deserunt perferendis sequi. Atque
-    nesciunt, quod est illum doloremque ipcelesam! Fugiat illum officiis vero,
-    harum atque similique odit autem minima, dolorum iste distinctio incidunt?
-    Sunt, libero voluptates saepe odio commodi officiis. Quia quidem earum
-    deleniti molestiae nobis, numquam quibusdam voluptatum quam dolore, itaque
-    consequuntur doloremque quasi iure cum ullam. Dolorem eos assumenda
-    molestiae sequi optio voluptas voluptate eaque, architecto explicabo, nisi
-    suscipit, id distinctio molestias.
-</p>
-'])
+Category::create([ 'name' => 'Personal', 'slug' => 'personal' ]); User::create([
+'name' => 'Satine Zaneta', 'email' => 'satinezaneta@gmail.com', 'password' =>
+bcrypt(12345) ]) Post::create([ 'title' => 'judul pertama', 'category_id' => 1,
+'user' => 1, 'slug' => 'judul-pertama', 'excerpt' => 'Lorem ipsum dolor sit amet
+consectetur adipisicing elit.', 'body' => 'Lorem ipsum dolor sit amet
+consectetur adipisicing elit. Corrupti in molestias iste cum, sequi quam quo
+earum quia, officiis rerum nihil commodi? Quis ipsam iste cupiditate dicta
+eligendi, quidem voluptatum eius, nihil corporis nisi necessitatibus tenetur
+hic, ipsa nobis quas voluptate praesentium possimus nulla quo alias. Ex,
+obcaecati ratione tempore voluptates assumenda aliquam enim tempora animi,
+laboriosam itaque laborum quibusdam! Expedita eveniet veritatis nostrum ex fugit
+neque repellendus dignissimos veniam saepe, praesentium accusantium aspernatur
+soluta alias nisi vitae asperiores nobis sint debitis, quasi velit nemo? Vel,
+non. Maxime eligendi explicabo, minus quidem, sed nemo debitis quae voluptates
+fuga, dignissimos doloribus!', ])
