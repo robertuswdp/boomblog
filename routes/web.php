@@ -21,13 +21,13 @@ use App\Models\User;
 
 Route::get('/', function () {
     return view('home', [
-        "tittle" => "Home"
+        "title" => "Home"
     ]);
 });
 
 Route::get('/about', function () {
     return view('about', [
-        "tittle"  => "About",
+        "title"  => "About",
         "name"   => "Satine Zaneta",
         "email"  => "satinezaneta@gmail.com",
         "image"  => "satine.jpg"
@@ -39,20 +39,20 @@ Route::get('posts/{post:slug}', [PostController::class, 'show']);
 
 // Route::get('/categories', function () {
 //     return view('categories', [
-//         'tittle' => 'Post Categories',
+//         'title' => 'Post Categories',
 //         'categories' => category::all()
 //     ]);
 // });
 Route::get('categories', function() {
     return view('categories', [
-        'tittle' => 'Post Categories',
+        'title' => 'Post Categories',
         'categories' => Category::all()
     ]);
 });
 
 Route::get('/categories/{category:slug}', function(Category $category){
     return view('category', [
-        'tittle' => $category->name,
+        'title' => $category->name,
         'posts' => $category->posts,
         'category' => $category->name
     ]);
