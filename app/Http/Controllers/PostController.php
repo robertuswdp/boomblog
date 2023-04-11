@@ -12,7 +12,7 @@ class PostController extends Controller
             "title"  => "All Posts",
             "active" => 'posts',
             // "posts"  => Post::all()
-            "posts"  => Post::with(['author', 'category'])->latest()->get()
+            "posts"  => Post::latest()->get()
         ]);
     }
 
