@@ -60,8 +60,8 @@
                             <p>
                                 <small class="text-muted">
                                     By. <a href="/posts?author={{ $post->author->username }}" class="text-decoration-none">
-                                        {{ $post->author->name }}</a> in <a
-                                        href="/posts?category={{ $posts[0]->category->slug }}"></a>
+                                        {{ $post->author->name }}</a> in <a href="/posts?category={{ $posts[0]->category->slug }}"
+                                            class="text-decoration-none">{{ $posts[0]->category->name }}</a>
                                     {{ $post->created_at->diffForHumans() }}</small>
                                 </small>
                             </p>
