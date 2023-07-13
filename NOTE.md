@@ -1,2 +1,3 @@
-View Login & Registration
-6:16
+User Registration
+6.00
+12.50
